@@ -1,0 +1,15 @@
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\bin\Debug\net8.0\ProjectSensive.EntityLayer.deps.json
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\bin\Debug\net8.0\ProjectSensive.EntityLayer.runtimeconfig.json
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\bin\Debug\net8.0\ProjectSensive.EntityLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\bin\Debug\net8.0\ProjectSensive.EntityLayer.pdb
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.AssemblyInfo.cs
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.sourcelink.json
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\refint\ProjectSensive.EntityLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.pdb
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ProjectSensive.EntityLayer.genruntimeconfig.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.EntityLayer\obj\Debug\net8.0\ref\ProjectSensive.EntityLayer.dll

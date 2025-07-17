@@ -1,0 +1,16 @@
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\bin\Debug\net8.0\ProjectSensive.DataAccessLayer.deps.json
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\bin\Debug\net8.0\ProjectSensive.DataAccessLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\bin\Debug\net8.0\ProjectSensive.DataAccessLayer.pdb
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\bin\Debug\net8.0\ProjectSensive.EntityLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\bin\Debug\net8.0\ProjectSensive.EntityLayer.pdb
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.AssemblyInfo.cs
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.sourcelink.json
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectS.6ADE86DD.Up2Date
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\refint\ProjectSensive.DataAccessLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ProjectSensive.DataAccessLayer.pdb
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.DataAccessLayer\obj\Debug\net8.0\ref\ProjectSensive.DataAccessLayer.dll

@@ -4,14 +4,154 @@
     "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj": {
+    "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.BusinessLayer\\ProjectSensive.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj",
-        "projectName": "ProjectSensive.PresentationLayer",
-        "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj",
+        "projectUniqueName": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.BusinessLayer\\ProjectSensive.BusinessLayer.csproj",
+        "projectName": "ProjectSensive.BusinessLayer",
+        "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.BusinessLayer\\ProjectSensive.BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\kerec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\obj\\",
+        "outputPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kerec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.DataAccessLayer\\ProjectSensive.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.DataAccessLayer\\ProjectSensive.DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.DataAccessLayer\\ProjectSensive.DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.DataAccessLayer\\ProjectSensive.DataAccessLayer.csproj",
+        "projectName": "ProjectSensive.DataAccessLayer",
+        "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.DataAccessLayer\\ProjectSensive.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\kerec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kerec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.EntityLayer\\ProjectSensive.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.EntityLayer\\ProjectSensive.EntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.EntityLayer\\ProjectSensive.EntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.EntityLayer\\ProjectSensive.EntityLayer.csproj",
+        "projectName": "ProjectSensive.EntityLayer",
+        "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.EntityLayer\\ProjectSensive.EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\kerec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +190,106 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj",
+        "projectName": "ProjectSensive.PresentationLayer",
+        "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\ProjectSensive.PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\kerec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.PresentationLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kerec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.BusinessLayer\\ProjectSensive.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\kerec\\source\\repos\\ProjectSensive\\ProjectSensive.BusinessLayer\\ProjectSensive.BusinessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.18, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
