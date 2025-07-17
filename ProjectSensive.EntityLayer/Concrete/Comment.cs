@@ -12,5 +12,7 @@ namespace ProjectSensive.EntityLayer.Concrete
         public string CommentDetail { get; set; }
         public DateTime CommentDate { get; set; }
         public bool Status { get; set; }
+        public int AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
     }
 }

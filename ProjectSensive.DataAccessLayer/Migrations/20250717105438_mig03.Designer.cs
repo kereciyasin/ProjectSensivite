@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectSensive.DataAccessLayer.Context;
 
@@ -11,9 +12,11 @@ using ProjectSensive.DataAccessLayer.Context;
 namespace ProjectSensive.DataAccessLayer.Migrations
 {
     [DbContext(typeof(ContextSensive))]
-    partial class ContextSensiveModelSnapshot : ModelSnapshot
+    [Migration("20250717105438_mig03")]
+    partial class mig03
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -294,9 +297,6 @@ namespace ProjectSensive.DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentID"));
 
-                    b.Property<int>("AppUserId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CommentDate")
                         .HasColumnType("datetime2");
 
@@ -308,8 +308,6 @@ namespace ProjectSensive.DataAccessLayer.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("CommentID");
-
-                    b.HasIndex("AppUserId");
 
                     b.ToTable("Comments");
                 });
@@ -446,22 +444,9 @@ namespace ProjectSensive.DataAccessLayer.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("ProjectSensive.EntityLayer.Concrete.Comment", b =>
-                {
-                    b.HasOne("ProjectSensive.EntityLayer.Concrete.AppUser", "AppUser")
-                        .WithMany("Comments")
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AppUser");
-                });
-
             modelBuilder.Entity("ProjectSensive.EntityLayer.Concrete.AppUser", b =>
                 {
                     b.Navigation("Articles");
-
-                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("ProjectSensive.EntityLayer.Concrete.Category", b =>

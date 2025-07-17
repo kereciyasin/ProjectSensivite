@@ -14,5 +14,7 @@ namespace ProjectSensive.EntityLayer.Concrete
         public DateTime CreatedDate { get; set; }
         public int CategoryID { get; set; }
         public Category Category { get; set; } // Navigation property to Category
+        public int AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
     }
 }
