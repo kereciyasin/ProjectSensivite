@@ -1,5 +1,6 @@
 using ProjectSensive.DataAccessLayer.Context;
 using ProjectSensive.EntityLayer.Concrete;
+using ProjectSensive.PresentationLayer.Models;
 
 namespace ProjectSensive.PresentationLayer
 {
@@ -14,7 +15,8 @@ namespace ProjectSensive.PresentationLayer
 
             builder.Services.AddDbContext<ContextSensive>();
             builder.Services.AddIdentity<AppUser, AppRole>()
-                .AddEntityFrameworkStores<ContextSensive>();
+                .AddEntityFrameworkStores<ContextSensive>()
+                .AddErrorDescriber<CustomIdentityValidator>();
 
             var app = builder.Build();
 
