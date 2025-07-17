@@ -1,3 +1,6 @@
+using ProjectSensive.DataAccessLayer.Context;
+using ProjectSensive.EntityLayer.Concrete;
+
 namespace ProjectSensive.PresentationLayer
 {
     public class Program
@@ -8,6 +11,10 @@ namespace ProjectSensive.PresentationLayer
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ContextSensive>();
+            builder.Services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<ContextSensive>();
 
             var app = builder.Build();
 
@@ -24,6 +31,7 @@ namespace ProjectSensive.PresentationLayer
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
