@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="EntityFramework\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ProjectSensive.EntityLayer\ProjectSensive.EntityLayer.csproj" />
   </ItemGroup>
 
