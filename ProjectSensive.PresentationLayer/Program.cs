@@ -1,4 +1,8 @@
+using ProjectSensive.BusinessLayer.Abstract;
+using ProjectSensive.BusinessLayer.Concrete;
+using ProjectSensive.DataAccessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Context;
+using ProjectSensive.DataAccessLayer.EntityFramework;
 using ProjectSensive.EntityLayer.Concrete;
 using ProjectSensive.PresentationLayer.Models;
 
@@ -17,6 +21,26 @@ namespace ProjectSensive.PresentationLayer
             builder.Services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<ContextSensive>()
                 .AddErrorDescriber<CustomIdentityValidator>();
+
+            builder.Services.AddScoped<IArticleDal, EfArticleDal>();
+            builder.Services.AddScoped<IArticleService, ArticleManager>();
+
+            builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+            builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
+            builder.Services.AddScoped<ICommentDal, EfCommentDal>();
+            builder.Services.AddScoped<ICommentService, CommentManager>();
+
+            builder.Services.AddScoped<IContactDal, EfContactDal>();
+            builder.Services.AddScoped<IContactService, ContactManager>();
+
+            builder.Services.AddScoped<INewsletterDal, EfNewsletterDal>();
+            builder.Services.AddScoped<INewsletterService, NewsletterManager>();
+
+            builder.Services.AddScoped<ITagCloudDal, EfTagCloudDal>();
+            builder.Services.AddScoped<ITagCloudService, TagCloudManager>();
+
+
 
             var app = builder.Build();
 

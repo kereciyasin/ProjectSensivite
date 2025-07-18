@@ -11,7 +11,7 @@ namespace ProjectSensive.BusinessLayer.Abstract
         void TInsert(T entity);
         void TUpdate(T entity);
         void TDelete(int id);
-        List<T> GetAll();
-        T GetById(int id);
+        List<T> TGetAll();
+        T TGetById(int id);
     }
 }
