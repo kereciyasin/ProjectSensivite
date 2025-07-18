@@ -20,7 +20,7 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public void TDelete(int id)
         {
-            throw new NotImplementedException();
+            _categoryDal.Delete(id);
         }
 
         public List<Category> TGetAll()

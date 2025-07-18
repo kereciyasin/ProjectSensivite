@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProjectSensive.DataAccessLayer.Repositories
 {
-    public class GenericRepository<T> : IGenericDal<T> where T : class, new()
+    public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         private readonly ContextSensive _context;
 
@@ -36,12 +36,14 @@ namespace ProjectSensive.DataAccessLayer.Repositories
 
         public void Insert(T entity)
         {
-            _context.Set<T>().Find(entity); ;
+            _context.Set<T>().Add(entity);
+            _context.SaveChanges();
         }
 
         public void Update(T entity)
         {
             _context.Set<T>().Update(entity);
+            _context.SaveChanges();
         }
     }
 }
