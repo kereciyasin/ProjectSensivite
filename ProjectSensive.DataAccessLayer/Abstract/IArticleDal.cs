@@ -9,5 +9,7 @@ namespace ProjectSensive.DataAccessLayer.Abstract
 {
     public interface IArticleDal : IGenericDal<Article>
     {
+        List<Article> ArticleListWithCategory();
+        List<Article> ArticleListWithCategoryAndAppUser();
     }
 }

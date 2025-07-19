@@ -1,4 +1,5 @@
-﻿using ProjectSensive.DataAccessLayer.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectSensive.DataAccessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Context;
 using ProjectSensive.DataAccessLayer.Repositories;
 using ProjectSensive.EntityLayer.Concrete;
@@ -14,6 +15,18 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
     {
         public EfArticleDal(ContextSensive context) : base(context)
         {
+        }
+        public List<Article> ArticleListWithCategory()
+        {
+            var context = new ContextSensive();
+            var values = context.Articles.Include(x => x.Category).ToList();
+            return values;
+        }
+        public List<Article> ArticleListWithCategoryAndAppUser()
+        {
+            var context = new ContextSensive();
+            var values = context.Articles.Include(x => x.Category).Include(x => x.AppUser).ToList();
+            return values;
         }
     }
 }

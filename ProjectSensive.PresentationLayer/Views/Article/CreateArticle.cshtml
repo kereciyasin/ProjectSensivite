@@ -1,0 +1,33 @@
+﻿@model Article
+@{
+    Layout = null;
+}
+
+<link href="~/Login_v1/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Article Title</label>
+        <input type="text" asp-for="Title" class="form-control" />
+        <br />
+
+        <label>Article Description</label>
+        <input type="text" asp-for="Description" class="form-control" />
+        <br />
+
+        <label>Cover Image URL</label>
+        @* <input type="text" asp-for="" class="form-control" /> *@
+        <br />
+
+        <label>Category</label>
+        @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control" })
+        <br />
+
+        <label>Author</label>
+        @* @Html.DropDownListFor(x => x.AppUserId, (List<SelectListItem>)ViewBag.v2, new { @class = "form-control" }) *@
+        <br />
+
+        <button class="btn btn-info">Add Article</button>
+    </form>
+</div>
