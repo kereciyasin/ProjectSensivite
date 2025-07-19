@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ProjectSensive.BusinessLayer.Abstract;
+using ProjectSensive.EntityLayer.Concrete;
 
 namespace ProjectSensive.PresentationLayer.Controllers
 {
@@ -8,11 +9,13 @@ namespace ProjectSensive.PresentationLayer.Controllers
     {
         private readonly IArticleService _articleService;
         private readonly ICategoryService _categoryService;
+        private readonly IAppUserService _appUserService;
 
-        public ArticleController(IArticleService articleService, ICategoryService categoryService)
+        public ArticleController(IArticleService articleService, ICategoryService categoryService, IAppUserService appUserService)
         {
             _articleService = articleService;
             _categoryService = categoryService;
+            _appUserService = appUserService;
         }
 
         public IActionResult ArticleList()
@@ -42,9 +45,28 @@ namespace ProjectSensive.PresentationLayer.Controllers
                                             }).ToList();
             ViewBag.v1 = values1;
 
-            return View();
 
+
+            var appUserList = _appUserService.TGetAll();
+            List<SelectListItem> values2 = (from x in appUserList
+                                            select new SelectListItem
+                                            {
+                                                Text = x.Name + " " + x.Surname,
+                                                Value = x.Id.ToString()
+                                            }).ToList();
+            ViewBag.v2 = values2;
+
+
+            return View();
         }
+        [HttpPost]
+        public IActionResult CreateArticle(Article article)
+        {
+            article.CreatedDate = DateTime.Now;
+            _articleService.TInsert(article);
+            return RedirectToAction("ArticleListWithCategoryAndAppUser");
+        }
+
 
     }
 }

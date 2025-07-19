@@ -22,6 +22,9 @@ namespace ProjectSensive.PresentationLayer
                 .AddEntityFrameworkStores<ContextSensive>()
                 .AddErrorDescriber<CustomIdentityValidator>();
 
+            builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
+            builder.Services.AddScoped<IAppUserService, AppUserManager>();
+
             builder.Services.AddScoped<IArticleDal, EfArticleDal>();
             builder.Services.AddScoped<IArticleService, ArticleManager>();
 
@@ -39,6 +42,9 @@ namespace ProjectSensive.PresentationLayer
 
             builder.Services.AddScoped<ITagCloudDal, EfTagCloudDal>();
             builder.Services.AddScoped<ITagCloudService, TagCloudManager>();
+
+
+
 
 
 
