@@ -28,5 +28,11 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
             var values = context.Articles.Include(x => x.Category).Include(x => x.AppUser).ToList();
             return values;
         }
+
+        public List<Article> GetArticlesWithCategory()
+        {
+            using var context = new ContextSensive();
+            return context.Articles.Include(x => x.Category).ToList();
+        }
     }
 }

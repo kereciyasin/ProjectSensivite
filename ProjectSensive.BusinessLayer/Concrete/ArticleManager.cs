@@ -12,10 +12,12 @@ namespace ProjectSensive.BusinessLayer.Concrete
     public class ArticleManager : IArticleService
     {
         private readonly IArticleDal _articleDal;
+        private readonly ICategoryDal _categoryDal;
 
-        public ArticleManager(IArticleDal articleDal)
+        public ArticleManager(IArticleDal articleDal, ICategoryDal categoryDal)
         {
             _articleDal = articleDal;
+            _categoryDal = categoryDal;
         }
 
         public List<Article> TArticleListWithCategory()
@@ -36,6 +38,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
         public List<Article> TGetAll()
         {
             return _articleDal.GetAll();
+        }
+
+        public List<Article> TGetArticlesWithCategory()
+        {
+            return _articleDal.GetArticlesWithCategory();
         }
 
         public Article TGetById(int id)
