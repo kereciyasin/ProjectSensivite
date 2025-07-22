@@ -14,6 +14,7 @@ namespace ProjectSensive.BusinessLayer.Abstract
         List<Article> TGetArticlesWithCategory();
         List<Article> TGetLast5ArticlesWithCategory();
         List<(string CategoryName, int Count)> TGetArticleCountByCategory();
+        List<Article> TGetMostCommentedArticles(int count = 3);
 
     }
 }

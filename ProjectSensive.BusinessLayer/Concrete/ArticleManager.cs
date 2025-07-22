@@ -1,5 +1,7 @@
-﻿using ProjectSensive.BusinessLayer.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectSensive.BusinessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Abstract;
+using ProjectSensive.DataAccessLayer.Context;
 using ProjectSensive.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -58,6 +60,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
         public List<Article> TGetLast5ArticlesWithCategory()
         {
             return _articleDal.GetLast5ArticlesWithCategory();
+        }
+
+        public List<Article> TGetMostCommentedArticles(int count)
+        {
+            return _articleDal.GetMostCommentedArticles(count);
         }
 
         public void TInsert(Article entity)

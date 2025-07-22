@@ -1,0 +1,25 @@
+﻿@model List<ProjectSensive.EntityLayer.Concrete.Article>
+
+<div class="single-sidebar-widget popular-post-widget">
+    <h4 class="single-sidebar-widget__title">Popular Post</h4>
+    <div class="popular-post-list">
+        @foreach (var item in Model)
+        {
+            <div class="single-post-list">
+                <div class="thumb">
+                    <img class="card-img rounded-0" src="@item.CoverImageUrl" alt="@item.Title"
+                         onerror="this.onerror=null;this.src='img/blog/thumb/thumb1.png';" />
+                    <ul class="thumb-info">
+                        <li><a href="#">@item.AppUser?.Name</a></li>
+                        <li><a href="#">@item.CreatedDate.ToString("MMM dd")</a></li>
+                    </ul>
+                </div>
+                <div class="details mt-20">
+                    <a href="#">
+                        <h6>@item.Title</h6>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

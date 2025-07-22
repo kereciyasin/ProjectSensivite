@@ -63,5 +63,17 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
             return values;
         }
 
+        public List<Article> GetMostCommentedArticles(int count)
+        {
+            using var context = new ContextSensive();
+
+            return context.Articles
+                .Include(x => x.Comments)
+                .Include(x => x.Category)
+                .Include(x => x.AppUser)
+                .OrderByDescending(x => x.Comments.Count)
+                .Take(count)
+                .ToList();
+        }
     }
 }
