@@ -29,6 +29,18 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
             return values;
         }
 
+        public List<(string CategoryName, int Count)> GetArticleCountByCategory()
+        {
+            using var context = new ContextSensive();
+
+            var result = context.Articles
+                .GroupBy(a => a.Category.CategoryName)
+                .Select(g => new ValueTuple<string, int>(g.Key, g.Count()))
+                .ToList();
+
+            return result;
+        }
+
         public List<Article> GetArticlesWithCategory()
         {
             using var context = new ContextSensive();

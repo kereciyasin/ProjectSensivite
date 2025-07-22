@@ -13,7 +13,7 @@ namespace ProjectSensive.BusinessLayer.Abstract
         List<Article> TArticleListWithCategoryAndAppUser();
         List<Article> TGetArticlesWithCategory();
         List<Article> TGetLast5ArticlesWithCategory();
-
+        List<(string CategoryName, int Count)> TGetArticleCountByCategory();
 
     }
 }

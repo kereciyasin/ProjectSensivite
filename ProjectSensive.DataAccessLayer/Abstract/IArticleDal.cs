@@ -13,7 +13,6 @@ namespace ProjectSensive.DataAccessLayer.Abstract
         List<Article> ArticleListWithCategoryAndAppUser();
         List<Article> GetArticlesWithCategory();
         List<Article> GetLast5ArticlesWithCategory();
-
-
+        List<(string CategoryName, int Count)> GetArticleCountByCategory();
     }
 }

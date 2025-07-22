@@ -40,6 +40,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
             return _articleDal.GetAll();
         }
 
+        public List<(string CategoryName, int Count)> TGetArticleCountByCategory()
+        {
+            return _articleDal.GetArticleCountByCategory();
+        }
+
         public List<Article> TGetArticlesWithCategory()
         {
             return _articleDal.GetArticlesWithCategory();
