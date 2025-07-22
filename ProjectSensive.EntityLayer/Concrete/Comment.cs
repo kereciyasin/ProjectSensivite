@@ -14,5 +14,7 @@ namespace ProjectSensive.EntityLayer.Concrete
         public bool Status { get; set; }
         public int AppUserId { get; set; }
         public AppUser AppUser { get; set; }
+        public int ArticleID { get; set; }
+        public Article Article { get; set; }
     }
 }

@@ -17,5 +17,6 @@ namespace ProjectSensive.EntityLayer.Concrete
         public Category Category { get; set; } // Navigation property to Category
         public int AppUserId { get; set; }
         public AppUser AppUser { get; set; }
+        public List<Comment> Comments { get; set; } 
     }
 }
