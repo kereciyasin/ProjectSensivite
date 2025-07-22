@@ -21,5 +21,7 @@ namespace ProjectSensive.DataAccessLayer.Context
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Newsletter> Newsletters { get; set; }
         public DbSet<TagCloud> TagClouds { get; set; }
+
+
     }
 }
