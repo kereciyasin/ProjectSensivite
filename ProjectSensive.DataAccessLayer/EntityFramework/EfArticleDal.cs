@@ -32,7 +32,24 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
         public List<Article> GetArticlesWithCategory()
         {
             using var context = new ContextSensive();
-            return context.Articles.Include(x => x.Category).ToList();
+            return context.Articles
+                .Include(x => x.Category)
+                .OrderByDescending(x => x.CreatedDate)
+                 .Take(5)
+                .ToList();
         }
+        public List<Article> GetLast5ArticlesWithCategory()
+        {
+            using var context = new ContextSensive();
+
+            var values = context.Articles
+                .Include(x => x.Category)
+                .OrderByDescending(x => x.ArticleID) // ya da CreatedDate
+                .Take(5)
+                .ToList();
+
+            return values;
+        }
+
     }
 }

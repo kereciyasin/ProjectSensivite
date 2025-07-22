@@ -22,7 +22,7 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public List<Article> TArticleListWithCategory()
         {
-            return _articleDal.ArticleListWithCategory();
+            return _articleDal.GetLast5ArticlesWithCategory();
         }
 
         public List<Article> TArticleListWithCategoryAndAppUser()
@@ -48,6 +48,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
         public Article TGetById(int id)
         {
             return _articleDal.GetById(id);
+        }
+
+        public List<Article> TGetLast5ArticlesWithCategory()
+        {
+            return _articleDal.GetLast5ArticlesWithCategory();
         }
 
         public void TInsert(Article entity)

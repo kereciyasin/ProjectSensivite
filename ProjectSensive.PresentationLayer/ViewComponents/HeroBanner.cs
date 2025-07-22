@@ -6,8 +6,6 @@ namespace ProjectSensive.PresentationLayer.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            string today = DateTime.Now.ToString("MMMM dd, yyyy");
-            ViewBag.Today = today;
             return View();
         }
     }

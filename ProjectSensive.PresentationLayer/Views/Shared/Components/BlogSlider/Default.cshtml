@@ -1,66 +1,25 @@
-﻿<section>
+﻿@using ProjectSensive.EntityLayer.Concrete
+@model List<Article>
+
+<section>
     <div class="container">
         <div class="owl-carousel owl-theme blog-slider">
-            <div class="card blog__slide text-center">
-                <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="/sensive-master/img/blog/blog-slider/blog-slide1.png" alt="">
+
+            @foreach (var item in Model)
+            {
+                <div class="card blog__slide text-center">
+                    <div class="blog__slide__img">
+                        <img class="card-img rounded-0" src="@item.CoverImageUrl" alt="@item.Title"
+                             onerror="this.onerror=null;this.src='img/blog/blog-slider/blog-slide1.png';" />
+                    </div>
+                    <div class="blog__slide__content">
+                        <a class="blog__slide__label" href="#">@item.Category.CategoryName"</a>
+                        <h3><a href="#">@item.Title</a></h3>
+                        <p>@item.CreatedDate.ToString("MMMM dd, yyyy")</p>
+                    </div>
                 </div>
-                <div class="blog__slide__content">
-                    <a class="blog__slide__label" href="#">Fashion</a>
-                    <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                    <p>2 days ago</p>
-                </div>
-            </div>
-            <div class="card blog__slide text-center">
-                <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="/sensive-master/img/blog/blog-slider/blog-slide2.png" alt="">
-                </div>
-                <div class="blog__slide__content">
-                    <a class="blog__slide__label" href="#">Fashion</a>
-                    <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                    <p>2 days ago</p>
-                </div>
-            </div>
-            <div class="card blog__slide text-center">
-                <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="/sensive-master/img/blog/blog-slider/blog-slide3.png" alt="">
-                </div>
-                <div class="blog__slide__content">
-                    <a class="blog__slide__label" href="#">Fashion</a>
-                    <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                    <p>2 days ago</p>
-                </div>
-            </div>
-            <div class="card blog__slide text-center">
-                <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="/sensive-master/img/blog/blog-slider/blog-slide1.png" alt="">
-                </div>
-                <div class="blog__slide__content">
-                    <a class="blog__slide__label" href="#">Fashion</a>
-                    <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                    <p>2 days ago</p>
-                </div>
-            </div>
-            <div class="card blog__slide text-center">
-                <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="/sensive-master/img/blog/blog-slider/blog-slide2.png" alt="">
-                </div>
-                <div class="blog__slide__content">
-                    <a class="blog__slide__label" href="#">Fashion</a>
-                    <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                    <p>2 days ago</p>
-                </div>
-            </div>
-            <div class="card blog__slide text-center">
-                <div class="blog__slide__img">
-                    <img class="card-img rounded-0" src="/sensive-master/img/blog/blog-slider/blog-slide3.png" alt="">
-                </div>
-                <div class="blog__slide__content">
-                    <a class="blog__slide__label" href="#">Fashion</a>
-                    <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-                    <p>2 days ago</p>
-                </div>
-            </div>
+            }
+
         </div>
     </div>
 </section>

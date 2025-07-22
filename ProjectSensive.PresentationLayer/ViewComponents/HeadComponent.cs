@@ -2,7 +2,7 @@
 
 namespace ProjectSensive.PresentationLayer.ViewComponents
 {
-    public class StartBlogPost : ViewComponent
+    public class HeadComponent : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

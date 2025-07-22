@@ -80,8 +80,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ1NsaWRlclxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kerec/source/repos/ProjectSensive/ProjectSensive.PresentationLayer/Views/Shared/Components/Footer/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXERlZmF1bHQuY3NodG1s
+[C:/Users/kerec/source/repos/ProjectSensive/ProjectSensive.PresentationLayer/Views/Shared/Components/HeadComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZENvbXBvbmVudFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kerec/source/repos/ProjectSensive/ProjectSensive.PresentationLayer/Views/Shared/Components/HeaderComponent/Default.cshtml]
@@ -90,10 +90,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/kerec/source/repos/ProjectSensive/ProjectSensive.PresentationLayer/Views/Shared/Components/HeroBanner/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVyb0Jhbm5lclxEZWZhdWx0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/kerec/source/repos/ProjectSensive/ProjectSensive.PresentationLayer/Views/Shared/Components/StartBlogPost/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3RhcnRCbG9nUG9zdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kerec/source/repos/ProjectSensive/ProjectSensive.PresentationLayer/Views/Shared/Error.cshtml]

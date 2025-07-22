@@ -12,6 +12,8 @@ namespace ProjectSensive.DataAccessLayer.Abstract
         List<Article> ArticleListWithCategory();
         List<Article> ArticleListWithCategoryAndAppUser();
         List<Article> GetArticlesWithCategory();
+        List<Article> GetLast5ArticlesWithCategory();
+
 
     }
 }

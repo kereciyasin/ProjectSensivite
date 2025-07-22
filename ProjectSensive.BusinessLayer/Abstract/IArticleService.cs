@@ -12,6 +12,8 @@ namespace ProjectSensive.BusinessLayer.Abstract
         List<Article> TArticleListWithCategory();
         List<Article> TArticleListWithCategoryAndAppUser();
         List<Article> TGetArticlesWithCategory();
+        List<Article> TGetLast5ArticlesWithCategory();
+
 
     }
 }
