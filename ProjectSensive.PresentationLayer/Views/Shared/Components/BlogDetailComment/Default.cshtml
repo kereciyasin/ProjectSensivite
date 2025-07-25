@@ -1,0 +1,25 @@
+﻿@model List<ProjectSensive.EntityLayer.Concrete.Comment>
+
+<div class="comments-area">
+    <h4>@Model.Count() Comments</h4>
+    @foreach (var comment in Model)
+    {
+        <div class="comment-list mb-3">
+            <div class="single-comment justify-content-between d-flex">
+                <div class="user justify-content-between d-flex">
+                    <div class="thumb">
+                        <img src="/img/blog/user-img.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h5><a href="#">@comment.AppUser?.Name @comment.AppUser?.Surname</a></h5>
+                        <p class="date">@comment.CommentDate.ToString("dd MMM yyyy HH:mm")</p>
+                        <p class="comment">@comment.CommentDetail</p>
+                    </div>
+                </div>
+                <div class="reply-btn">
+                    <a href="#" class="btn-reply text-uppercase">Reply</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

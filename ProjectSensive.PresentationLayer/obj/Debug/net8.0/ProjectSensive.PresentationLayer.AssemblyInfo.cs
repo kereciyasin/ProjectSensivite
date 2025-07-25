@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectSensive.PresentationLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6405834247bdad7d625c8079e50246a47ce0fe31")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcc991ec73ad0ce048d07171b8142dbf611dfa58")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectSensive.PresentationLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectSensive.PresentationLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
