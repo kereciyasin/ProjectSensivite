@@ -9,11 +9,10 @@ namespace ProjectSensive.PresentationLayer.ViewComponents
         {
             var model = new CommentAddViewModel
             {
-                ArticleID = articleId,
-                AppUserId = 1 
+                ArticleID = articleId
             };
 
-            return View(model); 
+            return View(model);
         }
     }
 }

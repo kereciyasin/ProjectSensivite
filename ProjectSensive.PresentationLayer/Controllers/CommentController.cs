@@ -27,12 +27,14 @@ namespace ProjectSensive.PresentationLayer.Controllers
                 {
                     CommentDetail = model.CommentDetail,
                     ArticleID = model.ArticleID,
-                    AppUserId = model.AppUserId,
+                    Name = model.Name,
+                    Email = model.Email,
                     Status = true,
                     CommentDate = DateTime.Now
                 };
                 _commentService.TInsert(comment);
             }
+
             return RedirectToAction("Detail", "Article", new { id = model.ArticleID });
         }
     }

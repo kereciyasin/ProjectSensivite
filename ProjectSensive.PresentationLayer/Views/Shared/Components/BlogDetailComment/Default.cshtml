@@ -11,7 +11,18 @@
                         <img src="/img/blog/user-img.png" alt="">
                     </div>
                     <div class="desc">
-                        <h5><a href="#">@comment.AppUser?.Name @comment.AppUser?.Surname</a></h5>
+                        <h5>
+                            <a href="#">
+                                @if (comment.AppUser != null)
+                                {
+                                    @($"{comment.AppUser.Name} {comment.AppUser.Surname}")
+                                }
+                                else
+                                {
+                                    @comment.Name
+                                }
+                            </a>
+                        </h5>
                         <p class="date">@comment.CommentDate.ToString("dd MMM yyyy HH:mm")</p>
                         <p class="comment">@comment.CommentDetail</p>
                     </div>

@@ -4,6 +4,9 @@
     {
         public string CommentDetail { get; set; }
         public int ArticleID { get; set; }
-        public int AppUserId { get; set; }
+
+        public string Name { get; set; }
+        public string Email { get; set; }
     }
+
 }
