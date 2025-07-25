@@ -67,6 +67,12 @@ namespace ProjectSensive.PresentationLayer.Controllers
             return RedirectToAction("ArticleListWithCategoryAndAppUser");
         }
 
-
+        public IActionResult Detail()
+        {
+            return View(); // Views/Article/Detail.cshtml'i getirir
+        }
     }
+
+
 }
+
