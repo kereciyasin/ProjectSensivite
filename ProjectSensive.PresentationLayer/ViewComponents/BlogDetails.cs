@@ -11,10 +11,11 @@ namespace ProjectSensive.PresentationLayer.ViewComponents
         {
             _articleService = articleService;
         }
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(int id)
         {
-            var articles = _articleService.TArticleListWithCategoryAndAppUser();
-            return View(articles);
+            var article = _articleService.TArticleListWithCategoryAndAppUser()
+                                      .FirstOrDefault(x => x.ArticleID == id);
+            return View(article);
         }
     }
 }
