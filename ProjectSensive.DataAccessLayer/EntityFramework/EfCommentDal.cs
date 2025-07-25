@@ -21,10 +21,10 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
         {
             using var context = new ContextSensive();
             return context.Comments
-                          .Include(c => c.Article)
-                          .Where(c => c.ArticleID == articleId)
-                          .OrderByDescending(c => c.ArticleID)
-                          .ToList();
+                .Include(c => c.AppUser)
+                .Where(c => c.ArticleID == articleId && c.Status == true)
+                .OrderByDescending(c => c.CommentDate)
+                .ToList();
         }
     }
 }
