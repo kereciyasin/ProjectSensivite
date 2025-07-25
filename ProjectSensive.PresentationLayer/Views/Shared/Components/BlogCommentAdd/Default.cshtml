@@ -1,0 +1,16 @@
+﻿@model ProjectSensive.PresentationLayer.Models.CommentAddViewModel
+
+<div class="comment-form">
+    <h4>Leave a Reply</h4>
+    <form asp-controller="Comment" asp-action="AddComment" method="post">
+
+        <input type="hidden" name="ArticleID" value="@Model.ArticleID" />
+        <input type="hidden" name="AppUserId" value="@Model.AppUserId" />
+
+        <div class="form-group">
+            <textarea class="form-control" name="CommentDetail" placeholder="Your comment..."></textarea>
+        </div>
+
+        <button type="submit" class="button submit_btn">Post Comment</button>
+    </form>
+</div>
