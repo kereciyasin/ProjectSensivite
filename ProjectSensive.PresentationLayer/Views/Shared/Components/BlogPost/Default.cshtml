@@ -15,8 +15,15 @@
             <div class="details mt-20">
                 <a href="#"><h3>@item.Title</h3></a>
                 <p class="tag-list-inline">@item.Category?.CategoryName</p>
-                <p>@item.Description</p>
-                <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
+                <p>
+                    @{
+                        var shortDesc = item.Description?.Length > 120
+                        ? item.Description.Substring(0, 120) + "..."
+                        : item.Description;
+                    }
+                    @shortDesc
+                </p>
+                <a class="button" asp-controller="Article" asp-action="Detail" asp-route-id="@item.ArticleID">Read More</a>
             </div>
         </div>
     }
