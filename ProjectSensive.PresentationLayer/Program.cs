@@ -78,7 +78,6 @@ namespace ProjectSensive.PresentationLayer
                 );
             });
 
-
             app.Run();
         }
     }

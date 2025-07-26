@@ -1,6 +1,8 @@
 ﻿@model List<Category>
+
 @{
-    Layout = null;
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Areas/Writer/Views/AdminLayout/Index.cshtml";
 }
 
 <link href="~/Login_v1/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -44,3 +46,4 @@
         <i class="bi bi-plus-circle"></i> Add New Category
     </a>
 </div>
+

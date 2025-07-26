@@ -2,9 +2,9 @@
 
 namespace ProjectSensive.PresentationLayer.Areas.Writer.Controllers
 {
-    public class WriterController : Controller
+    [Area("Writer")]
+    public class AdminLayoutController : Controller
     {
-        [Area("Writer")]
         public IActionResult Index()
         {
             return View();
