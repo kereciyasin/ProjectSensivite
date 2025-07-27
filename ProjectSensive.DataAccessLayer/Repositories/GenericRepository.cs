@@ -17,13 +17,6 @@ namespace ProjectSensive.DataAccessLayer.Repositories
             _context = context;
         }
 
-        public void Delete(int id)
-        {
-            var value = _context.Set<T>().Find(id);
-            _context.Set<T>().Remove(value);
-            _context.SaveChanges();
-        }
-
         public List<T> GetAll()
         {
             return _context.Set<T>().ToList();
@@ -37,6 +30,12 @@ namespace ProjectSensive.DataAccessLayer.Repositories
         public void Insert(T entity)
         {
             _context.Set<T>().Add(entity);
+            _context.SaveChanges();
+        }
+
+        public void TDelete(T entity)
+        {
+            _context.Remove(entity);
             _context.SaveChanges();
         }
 

@@ -1,4 +1,5 @@
-﻿using ProjectSensive.DataAccessLayer.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectSensive.DataAccessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Context;
 using ProjectSensive.DataAccessLayer.Repositories;
 using ProjectSensive.EntityLayer.Concrete;
@@ -12,8 +13,14 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
 {
     public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
     {
+        private readonly ContextSensive _context;
         public EfCategoryDal(ContextSensive context) : base(context)
         {
+        }
+        public void Delete(Category entity)
+        {
+            _context.Remove(entity);
+            _context.SaveChanges();
         }
     }
 }
