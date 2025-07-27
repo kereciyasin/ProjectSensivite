@@ -39,13 +39,13 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public void TInsert(Category entity)
         {
-            if (entity.CategoryName.Length >= 5 && entity.CategoryName.Length <= 50)
+            if (!string.IsNullOrEmpty(entity.CategoryName) && entity.CategoryName.Length >= 5 && entity.CategoryName.Length <= 50)
             {
                 _categoryDal.Insert(entity);
             }
             else
             {
-                //Error message.
+                // loglama, exception vs. eklenebilir
             }
         }
 

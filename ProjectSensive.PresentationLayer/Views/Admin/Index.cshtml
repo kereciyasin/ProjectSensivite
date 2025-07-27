@@ -1,22 +1,23 @@
 ﻿@{
     Layout = null;
 }
+/pluto-1.0.0/
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    @await Component.InvokeAsync("AdminLayoutHead")
-</head>
+    @await Component.InvokeAsync("AdminHead")
+
 <body class="dashboard dashboard_1">
     <div class="full_container">
         <div class="inner_container">
             <!-- Sidebar  -->
-            @await Component.InvokeAsync("AdminLayoutSidebar")
+            @await Component.InvokeAsync("AdminSidebar")
+
 
             <!-- end sidebar -->
             <!-- right content -->
             <div id="content">
                 <!-- topbar -->
-                @await Component.InvokeAsync("AdminLayoutTopbar")
+                @await Component.InvokeAsync("AdminTopbar")
 
                 <!-- end topbar -->
                 <!-- dashboard inner -->

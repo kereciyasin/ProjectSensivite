@@ -1,0 +1,68 @@
+﻿@model ProjectSensive.EntityLayer.Concrete.AppUser
+
+<nav id="sidebar">
+    <div class="sidebar_blog_1">
+        <div class="sidebar-header">
+            <div class="logo_section">
+                <a href="/admin/dashboard">
+                    <img class="logo_icon img-responsive" src="/pluto-1.0.0/images/logo/logo_icon.png" alt="logo" />
+                </a>
+            </div>
+        </div>
+        <div class="sidebar_user_info">
+            <div class="icon_setting"></div>
+            <div class="user_profle_side">
+                <div class="user_img">
+                    <img class="img-responsive" src="@Model.ImageUrl" alt="User Image" />
+                </div>
+                <div class="user_info">
+                    <h6>@Model.Name @Model.Surname</h6>
+                    <p><span class="online_animation"></span> Online</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar_blog_2">
+        <h4>General</h4>
+        <ul class="list-unstyled components">
+            <li>
+                <a href="/admin/dashboard">
+                    <i class="fa fa-user orange_color"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/profile">
+                    <i class="fa fa-diamond purple_color"></i>
+                    <span>My Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/posts">
+                    <i class="fa fa-newspaper-o blue_color"></i>
+                    <span>My Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/comments">
+                    <i class="fa fa-paper-plane pink_color"></i>
+                    <span>My Comments</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" target="_blank">
+                    <i class="fa fa-map purple_color2"></i>
+                    <span>Go to Site</span>
+                </a>
+            </li>
+            <li>
+                <a href="/account/logout">
+                    <i class="fa fa-cog yellow_color"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>

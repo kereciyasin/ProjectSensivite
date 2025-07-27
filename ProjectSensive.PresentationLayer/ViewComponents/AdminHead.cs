@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ProjectSensive.PresentationLayer.Areas.Writer.ViewComponents
+namespace ProjectSensive.PresentationLayer.ViewComponents
 {
-    public class AdminLayoutHead : ViewComponent
+    public class AdminHead : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

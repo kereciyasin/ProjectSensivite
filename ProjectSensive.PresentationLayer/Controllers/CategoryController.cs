@@ -27,7 +27,7 @@ namespace ProjectSensive.PresentationLayer.Controllers
         public IActionResult CreateCategory(Category category)
         {
             _categoryService.TInsert(category);
-            return RedirectToAction("CategoryList");
+            return RedirectToAction("CategoryList", "Category");
         }
 
         //Delete

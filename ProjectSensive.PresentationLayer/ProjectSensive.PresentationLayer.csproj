@@ -29,9 +29,4 @@
     <ProjectReference Include="..\ProjectSensive.BusinessLayer\ProjectSensive.BusinessLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Writer\Data\" />
-    <Folder Include="Areas\Writer\Models\" />
-  </ItemGroup>
-
 </Project>

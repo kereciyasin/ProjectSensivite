@@ -20,7 +20,7 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
         }
         public void Delete(Category entity)
         {
-            _context.Set<Category>().Remove(entity); // Bu satır kritik
+            _context.Set<Category>().Remove(entity);
             _context.SaveChanges();
         }
     }
