@@ -16,10 +16,11 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
         private readonly ContextSensive _context;
         public EfCategoryDal(ContextSensive context) : base(context)
         {
+            _context = context;
         }
         public void Delete(Category entity)
         {
-            _context.Remove(entity);
+            _context.Set<Category>().Remove(entity); // Bu satır kritik
             _context.SaveChanges();
         }
     }

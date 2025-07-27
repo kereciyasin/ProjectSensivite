@@ -21,7 +21,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public void TDelete(int id)
         {
-            _tagCloudDal.Delete(id);
+            var entity = _tagCloudDal.GetById(id);
+            if (entity != null)
+            {
+                _tagCloudDal.Delete(entity);
+            }
         }
 
         public List<TagCloud> TGetAll()

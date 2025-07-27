@@ -20,7 +20,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public void TDelete(int id)
         {
-            _categoryDal.Delete(id);
+            var category = _categoryDal.GetById(id);
+            if (category != null)
+            {
+                _categoryDal.Delete(category);
+            }
         }
 
         public List<Category> TGetAll()

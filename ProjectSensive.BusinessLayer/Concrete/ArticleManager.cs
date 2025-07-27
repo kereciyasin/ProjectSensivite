@@ -2,6 +2,7 @@
 using ProjectSensive.BusinessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Context;
+using ProjectSensive.DataAccessLayer.EntityFramework;
 using ProjectSensive.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public void TDelete(int id)
         {
-            _articleDal.Delete(id);
+            var entity = _articleDal.GetById(id);
+            if (entity != null)
+            {
+                _articleDal.Delete(entity);
+            }
         }
 
         public List<Article> TGetAll()

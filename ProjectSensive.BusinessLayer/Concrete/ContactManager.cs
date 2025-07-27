@@ -1,5 +1,6 @@
 ﻿using ProjectSensive.BusinessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Abstract;
+using ProjectSensive.DataAccessLayer.EntityFramework;
 using ProjectSensive.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
 
         public void TDelete(int id)
         {
-            _contactDal.Delete(id);
+            var entity = _contactDal.GetById(id);
+            if (entity != null)
+            {
+                _contactDal.Delete(entity);
+            }
         }
 
         public List<Contact> TGetAll()
