@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ProjectSensive.BusinessLayer.Abstract;
 using ProjectSensive.EntityLayer.Concrete;
@@ -10,12 +11,21 @@ namespace ProjectSensive.PresentationLayer.Controllers
         private readonly IArticleService _articleService;
         private readonly ICategoryService _categoryService;
         private readonly IAppUserService _appUserService;
+        private readonly UserManager<AppUser> _userManager;
 
-        public ArticleController(IArticleService articleService, ICategoryService categoryService, IAppUserService appUserService)
+
+        public ArticleController(IArticleService articleService, ICategoryService categoryService, IAppUserService appUserService, UserManager<AppUser> userManager)
         {
             _articleService = articleService;
             _categoryService = categoryService;
             _appUserService = appUserService;
+            _userManager = userManager;
+        }
+        public async Task<IActionResult> MyArticles()
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name); 
+            var values = _articleService.TGetArticlesByAppUserId(user.Id);   
+            return View(values);
         }
 
         public IActionResult ArticleList()

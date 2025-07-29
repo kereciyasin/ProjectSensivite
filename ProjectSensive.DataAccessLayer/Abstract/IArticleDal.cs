@@ -15,6 +15,9 @@ namespace ProjectSensive.DataAccessLayer.Abstract
         List<Article> GetLast5ArticlesWithCategory();
         List<(string CategoryName, int Count)> GetArticleCountByCategory();
         List<Article> GetMostCommentedArticles(int count);
+        List<Article> GetArticlesByAppUserId(int appUserId);
+
+
 
     }
 }

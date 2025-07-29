@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using ProjectSensive.BusinessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Abstract;
 using ProjectSensive.DataAccessLayer.Context;
@@ -16,11 +17,14 @@ namespace ProjectSensive.BusinessLayer.Concrete
     {
         private readonly IArticleDal _articleDal;
         private readonly ICategoryDal _categoryDal;
+        private readonly UserManager<AppUser> _userManager;
 
-        public ArticleManager(IArticleDal articleDal, ICategoryDal categoryDal)
+
+        public ArticleManager(IArticleDal articleDal, ICategoryDal categoryDal, UserManager<AppUser> userManager)
         {
             _articleDal = articleDal;
             _categoryDal = categoryDal;
+            _userManager = userManager;
         }
 
         public List<Article> TArticleListWithCategory()
@@ -50,6 +54,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
         public List<(string CategoryName, int Count)> TGetArticleCountByCategory()
         {
             return _articleDal.GetArticleCountByCategory();
+        }
+
+        public List<Article> TGetArticlesByAppUserId(int appUserId)
+        {
+            return _articleDal.GetArticlesByAppUserId(appUserId);
         }
 
         public List<Article> TGetArticlesWithCategory()

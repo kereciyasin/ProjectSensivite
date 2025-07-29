@@ -41,6 +41,15 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
             return result;
         }
 
+        public List<Article> GetArticlesWithCategoryByAppUserId(int appUserId)
+        {
+            using var context = new ContextSensive();
+            return context.Articles
+                .Where(x => x.AppUserId == appUserId)
+                .Include(x => x.Category)
+                .ToList();
+        }
+
         public List<Article> GetArticlesWithCategory()
         {
             using var context = new ContextSensive();
@@ -73,6 +82,15 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
                 .Include(x => x.AppUser)
                 .OrderByDescending(x => x.Comments.Count)
                 .Take(count)
+                .ToList();
+        }
+
+        public List<Article> GetArticlesByAppUserId(int appUserId)
+        {
+            using var context = new ContextSensive();
+            return context.Articles
+                .Where(x => x.AppUserId == appUserId)
+                .Include(x => x.Category)
                 .ToList();
         }
     }

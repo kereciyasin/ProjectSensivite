@@ -255,7 +255,6 @@ C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.AssemblyInfoInputs.cache
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.AssemblyInfo.cs
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.csproj.CoreCompileInputs.cache
-C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.RazorAssemblyInfo.cache
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.RazorAssemblyInfo.cs
