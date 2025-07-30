@@ -57,7 +57,8 @@
 
 ### 📝 Registrieren
 - Benutzerinformationen werden mit Validierungsregeln gespeichert  
-![Dashboard Screenshot](/images/screenshots/register.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/register.png)
+
 
 ### 🔑 Login
 - Nach erfolgreichem Login wird der Benutzer zum Benutzerpanel weitergeleitet  
