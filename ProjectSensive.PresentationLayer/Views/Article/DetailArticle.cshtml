@@ -1,0 +1,28 @@
+﻿@model ProjectSensive.EntityLayer.Concrete.Article
+@{
+    ViewData["Title"] = "DetailArticle";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>@Model.Title</h2>
+    <br />
+    <p class="text-muted">
+        Category: @Model.Category.CategoryName |
+        Author: @Model.AppUser.Name @Model.AppUser.Surname |
+        <span>@Model.CreatedDate.ToShortDateString()</span>
+    </p>
+
+
+    @if (!string.IsNullOrEmpty(Model.CoverImageUrl))
+    {
+        <img src="@Model.CoverImageUrl" class="img-fluid rounded mb-3" alt="cover image" />
+    }
+
+    <div class="card p-4">
+        <p>@Model.Description</p>
+    </div>
+
+    <a href="/Article/MyArticles" class="btn btn-secondary mt-3">Back to My Articles</a>
+</div>
+

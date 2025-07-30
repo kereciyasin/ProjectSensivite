@@ -180,6 +180,16 @@ namespace ProjectSensive.PresentationLayer.Controllers
             _articleService.TUpdate(existingArticle);
             return RedirectToAction("MyArticles");
         }
+        public IActionResult DetailArticle(int id)
+        {
+            var article = _articleService.TArticleListWithCategoryAndAppUser()
+                             .FirstOrDefault(x => x.ArticleID == id);
+
+            if (article == null)
+                return NotFound();
+
+            return View(article); // Views/Article/Detail.cshtml sayfasını döndürür
+        }
 
     }
 
