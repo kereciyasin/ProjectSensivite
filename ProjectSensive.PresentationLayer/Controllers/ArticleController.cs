@@ -127,6 +127,60 @@ namespace ProjectSensive.PresentationLayer.Controllers
             _articleService.TInsert(article);
             return RedirectToAction("MyArticles");
         }
+        public async Task<IActionResult> DeleteArticle(int id)
+        {
+            var article = _articleService.TGetById(id);
+
+            if (article == null)
+                return NotFound();
+
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            if (article.AppUserId != user.Id)
+                return Forbid();
+
+            _articleService.TDelete(id);
+            return RedirectToAction("MyArticles");
+        }
+        [HttpGet]
+        public async Task<IActionResult> EditArticle(int id)
+        {
+            var article = _articleService.TGetById(id);
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            if (article == null || article.AppUserId != user.Id)
+                return Forbid();
+
+            var categories = _categoryService.TGetAll();
+            ViewBag.Categories = categories.Select(x => new SelectListItem
+            {
+                Text = x.CategoryName,
+                Value = x.CategoryID.ToString()
+            }).ToList();
+
+            return View(article);
+        }
+        [HttpPost]
+        public async Task<IActionResult> EditArticle(Article article)
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            var existingArticle = _articleService.TGetById(article.ArticleID);
+
+            if (existingArticle == null || existingArticle.AppUserId != user.Id)
+                return Forbid();
+
+
+            existingArticle.Title = article.Title;
+            existingArticle.Description = article.Description;
+            existingArticle.CategoryID = article.CategoryID;
+            existingArticle.CoverImageUrl = string.IsNullOrEmpty(article.CoverImageUrl)
+                ? "/images/default-cover.jpg"
+                : article.CoverImageUrl;
+
+            _articleService.TUpdate(existingArticle);
+            return RedirectToAction("MyArticles");
+        }
+
     }
 
 
