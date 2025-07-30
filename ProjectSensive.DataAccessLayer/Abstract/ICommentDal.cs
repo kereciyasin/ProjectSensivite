@@ -10,5 +10,7 @@ namespace ProjectSensive.DataAccessLayer.Abstract
     public interface ICommentDal : IGenericDal<Comment>
     {
         List<Comment> GetCommentsByArticle(int articleId);
+        List<Comment> GetCommentsForUserArticles(int userId);
+
     }
 }

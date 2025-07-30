@@ -26,5 +26,16 @@ namespace ProjectSensive.DataAccessLayer.EntityFramework
                 .OrderByDescending(c => c.CommentDate)
                 .ToList();
         }
+        public List<Comment> GetCommentsForUserArticles(int userId)
+        {
+            using var context = new ContextSensive();
+
+            return context.Comments
+                .Include(c => c.Article)
+                .Include(c => c.AppUser)
+                .Where(c => c.Article.AppUserId == userId)
+                .OrderByDescending(c => c.CommentDate)
+                .ToList();
+        }
     }
 }

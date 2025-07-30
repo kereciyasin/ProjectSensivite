@@ -43,6 +43,11 @@ namespace ProjectSensive.BusinessLayer.Concrete
             return _commentDal.GetCommentsByArticle(articleId);
         }
 
+        public List<Comment> TGetCommentsForUserArticles(int userId)
+        {
+            return _commentDal.GetCommentsForUserArticles(userId);
+        }
+
         public void TInsert(Comment entity)
         {
             _commentDal.Insert(entity);
