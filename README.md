@@ -64,3 +64,23 @@
 ![Login](screenshots/login.png)
 
 ---
+
+## 🛠 Verwendete Technologien
+
+| 💻 Technologie                        | 📌 Beschreibung                                           |
+|--------------------------------------|-----------------------------------------------------------|
+| ⚙️ ASP.NET Core (6.0)                | Mit ASP.NET Core 6.0 entwickelt                          |
+| 🗂 Repository Design Pattern         | Repository Pattern implementiert                         |
+| 🛠 Entity Framework                  | Für Datenzugriff verwendet                               |
+| 🧱 Code First                         | Code-First-Ansatz angewendet                             |
+| 🧩 N-Tier Architektur                | Projekt mit mehrschichtiger Architektur erstellt         |
+| 🗃️ MS SQL Server                     | Als relationale Datenbank verwendet                      |
+| ✏️ CRUD-Operationen                  | Erstellung, Änderung, Löschung und Anzeige umgesetzt     |
+| 🔐 Authentifizierung                 | Benutzeranmeldung und -verwaltung mit Identity           |
+| 🧪 LINQ-Abfragen                     | Für effizienten Datenbankzugriff                         |
+| ✅ Validierungsregeln                | Eingaben mit Model Validation geprüft                    |
+| 🆔 Identity-Framework                | Benutzer- & Rollensystem via ASP.NET Identity integriert |
+| 📄 Pagination                        | Blogbeiträge mit Seitenumblätterung angezeigt            |
+
+---
+
