@@ -56,9 +56,11 @@
 ## 🔐 Registrierungs- und Login-Seiten
 
 ### 📝 Registrieren
-- Benutzerinformationen werden mit Validierungsregeln gespeichert
+- Benutzerinformationen werden mit Validierungsregeln gespeichert  
+![Registrieren](screenshots/register.png)
 
 ### 🔑 Login
-- Nach erfolgreichem Login wird der Benutzer zum Benutzerpanel weitergeleitet
+- Nach erfolgreichem Login wird der Benutzer zum Benutzerpanel weitergeleitet  
+![Login](screenshots/login.png)
 
 ---
