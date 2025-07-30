@@ -56,12 +56,13 @@
 ## 🔐 Registrierungs- und Login-Seiten
 
 ### 📝 Registrieren
-- Benutzerinformationen werden mit Validierungsregeln gespeichert  
-![Registrieren](screenshots/register.png)
+- Benutzerinformationen werden mit Validierungsregeln gespeichert 
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/register.png)
+
 
 ### 🔑 Login
 - Nach erfolgreichem Login wird der Benutzer zum Benutzerpanel weitergeleitet  
-![Login](screenshots/login.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/login.png)
 
 ---
 
@@ -86,17 +87,37 @@
 
 ## 📁 Datenbankbeziehungen
 
-![Sql](screenshots/sql.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/sql.png)
 
 ---
 
 ## 🌟 Webseite
-![Web](screenshots/web1.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img1.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img2.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img3.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img4.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img5.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/img6.png)
 
 ---
 
 ## 🧑‍💻 Benutzerpanel
 
-![Admin](screenshots/admin.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/admin.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/admin1.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/admin2.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/admin3.png)
+![Dashboard Screenshot](./ProjectSensive.PresentationLayer/wwwroot/images/screenshots/admin4.png)
+
 ---
+
+## 👨‍💻 Projektentwickler
+
+Dieses Projekt wurde entwickelt von:
+
+**Yasin Kereci**  
+📧 kereciyasin52@gmail.com  
+🔗 [LinkedIn-Profil ansehen](https://www.linkedin.com/in/yasinkereci/)  
+🐙 [GitHub ansehen](https://github.com/kereciyasin)
 
