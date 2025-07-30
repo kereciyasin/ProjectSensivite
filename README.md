@@ -57,11 +57,11 @@
 
 ### 📝 Registrieren
 - Benutzerinformationen werden mit Validierungsregeln gespeichert  
-![Registrieren](./wwwroot/images/screenshots/register.png)
+![Dashboard Screenshot](/images/screenshots/register.png)
 
 ### 🔑 Login
 - Nach erfolgreichem Login wird der Benutzer zum Benutzerpanel weitergeleitet  
-![Login]./wwwroot/images/screenshots/login.png)
+![Dashboard Screenshot](/images/screenshots/login.png)
 
 ---
 
