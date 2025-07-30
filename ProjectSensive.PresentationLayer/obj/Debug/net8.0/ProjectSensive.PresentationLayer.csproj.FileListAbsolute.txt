@@ -276,3 +276,4 @@ C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.pdb
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.genruntimeconfig.cache
 C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ref\ProjectSensive.PresentationLayer.dll
+C:\Users\kerec\source\repos\ProjectSensive\ProjectSensive.PresentationLayer\obj\Debug\net8.0\ProjectSensive.PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
