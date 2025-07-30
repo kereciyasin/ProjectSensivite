@@ -40,19 +40,27 @@ namespace ProjectSensive.PresentationLayer.Controllers
 
             user.Name = model.Name;
             user.Surname = model.Surname;
+            user.UserName = model.Username;
             user.Email = model.Email;
             user.ImageUrl = model.ImageUrl;
+
+            if (!string.IsNullOrEmpty(model.Password))
+            {
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var passwordResult = await _userManager.ResetPasswordAsync(user, token, model.Password);
+                if (!passwordResult.Succeeded)
+                {
+                    ViewBag.Message = "Password update failed.";
+                    return View(model);
+                }
+            }
 
             var result = await _userManager.UpdateAsync(user);
 
             if (result.Succeeded)
-            {
                 ViewBag.Message = "Profile updated successfully.";
-            }
             else
-            {
                 ViewBag.Message = "An error occurred while updating.";
-            }
 
             return View(model);
         }

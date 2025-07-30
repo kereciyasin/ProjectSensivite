@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using ProjectSensive.BusinessLayer.Abstract;
 using ProjectSensive.BusinessLayer.Concrete;
 using ProjectSensive.DataAccessLayer.Abstract;
@@ -18,9 +19,12 @@ namespace ProjectSensive.PresentationLayer
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<ContextSensive>();
+
             builder.Services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<ContextSensive>()
+                .AddDefaultTokenProviders()
                 .AddErrorDescriber<CustomIdentityValidator>();
+
 
             builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
             builder.Services.AddScoped<IAppUserService, AppUserManager>();
