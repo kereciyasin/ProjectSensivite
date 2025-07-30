@@ -112,8 +112,6 @@
 
 ---
 
----
-
 ## 👨‍💻 Projektentwickler
 
 Dieses Projekt wurde entwickelt von:
