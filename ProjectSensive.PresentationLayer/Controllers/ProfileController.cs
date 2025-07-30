@@ -25,11 +25,13 @@ namespace ProjectSensive.PresentationLayer.Controllers
                 Name = user.Name,
                 Surname = user.Surname,
                 Email = user.Email,
-                ImageUrl = user.ImageUrl
+                ImageUrl = user.ImageUrl,
+                Username = user.UserName
             };
 
             return View(model);
         }
+
         [HttpPost]
         public async Task<IActionResult> Index(UserEditViewModel model)
         {
@@ -40,9 +42,9 @@ namespace ProjectSensive.PresentationLayer.Controllers
 
             user.Name = model.Name;
             user.Surname = model.Surname;
-            user.UserName = model.Username;
             user.Email = model.Email;
             user.ImageUrl = model.ImageUrl;
+            user.UserName = model.Username ?? user.UserName;
 
             if (!string.IsNullOrEmpty(model.Password))
             {
@@ -57,10 +59,9 @@ namespace ProjectSensive.PresentationLayer.Controllers
 
             var result = await _userManager.UpdateAsync(user);
 
-            if (result.Succeeded)
-                ViewBag.Message = "Profile updated successfully.";
-            else
-                ViewBag.Message = "An error occurred while updating.";
+            ViewBag.Message = result.Succeeded
+                ? "Profile updated successfully."
+                : "An error occurred while updating.";
 
             return View(model);
         }
