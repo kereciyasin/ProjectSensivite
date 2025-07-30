@@ -112,3 +112,14 @@
 
 ---
 
+---
+
+## 👨‍💻 Projektentwickler
+
+Dieses Projekt wurde entwickelt von:
+
+**Yasin Kereci**  
+📧 kereciyasin52@gmail.com  
+🔗 [LinkedIn-Profil ansehen](https://www.linkedin.com/in/yasinkereci/)  
+🐙 [GitHub ansehen](https://github.com/kereciyasin)
+
