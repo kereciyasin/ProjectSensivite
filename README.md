@@ -89,3 +89,14 @@
 ![Sql](screenshots/sql.png)
 
 ---
+
+## 🌟 Webseite
+![Web](screenshots/web1.png)
+
+---
+
+## 🧑‍💻 Benutzerpanel
+
+![Admin](screenshots/admin.png)
+---
+
