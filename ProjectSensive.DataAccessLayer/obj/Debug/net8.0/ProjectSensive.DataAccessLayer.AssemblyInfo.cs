@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectSensive.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+796836655da2aceb2dd5bfbba0ddce897d31a241")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cd0884dce832a84fd57ea66f1c0e8ce9e1a7aa1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectSensive.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectSensive.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
