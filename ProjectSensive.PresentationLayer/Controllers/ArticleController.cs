@@ -23,8 +23,8 @@ namespace ProjectSensive.PresentationLayer.Controllers
         }
         public async Task<IActionResult> MyArticles()
         {
-            var user = await _userManager.FindByNameAsync(User.Identity.Name); 
-            var values = _articleService.TGetArticlesByAppUserId(user.Id);   
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            var values = _articleService.TGetArticlesByAppUserId(user.Id);
             return View(values);
         }
 
@@ -87,6 +87,45 @@ namespace ProjectSensive.PresentationLayer.Controllers
                 return NotFound();
 
             return View(article);
+        }
+        public IActionResult Delete(int id)
+        {
+            var article = _articleService.TGetById(id);
+
+            if (article == null)
+                return NotFound();
+
+            _articleService.TDelete(id);
+            return RedirectToAction("MyArticles");
+        }
+
+        [HttpGet]
+        public IActionResult AddArticle()
+        {
+            var categoryList = _categoryService.TGetAll();
+            ViewBag.Categories = categoryList.Select(x => new SelectListItem
+            {
+                Text = x.CategoryName,
+                Value = x.CategoryID.ToString()
+            }).ToList();
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddArticle(Article article)
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            article.AppUserId = user.Id;
+            article.CreatedDate = DateTime.Now;
+
+            if (string.IsNullOrEmpty(article.CoverImageUrl))
+            {
+                article.CoverImageUrl = "/images/default-cover.jpg";
+            }
+
+            _articleService.TInsert(article);
+            return RedirectToAction("MyArticles");
         }
     }
 

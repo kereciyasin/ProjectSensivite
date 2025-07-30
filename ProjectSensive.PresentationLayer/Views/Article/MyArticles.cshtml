@@ -11,7 +11,7 @@
             <h2 class="text-dark">My Articles</h2>
         </div>
         <div class="col-md-6 text-right">
-            <a class="btn btn-success" href="/Article/CreateArticle">
+            <a class="btn btn-success" href="/Article/AddArticle">
                 <i class="fa fa-plus"></i> Add New Article
             </a>
         </div>
@@ -39,7 +39,9 @@
                                 <a href="/Article/Edit/@item.ArticleID" class="btn btn-warning btn-sm mr-1">
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
-                                <a href="/Article/Delete/@item.ArticleID" onclick="return confirm('Are you sure you want to delete this article?');" class="btn btn-danger btn-sm">
+                                <a href="/Article/Delete/@item.ArticleID"
+                                   onclick="return confirm('Are you sure you want to delete this article?');"
+                                   class="btn btn-danger btn-sm">
                                     <i class="fa fa-trash"></i> Delete
                                 </a>
                                 <a href="/Article/Detail/@item.ArticleID" class="btn btn-info btn-sm ml-1">

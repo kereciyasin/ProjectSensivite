@@ -1,0 +1,36 @@
+﻿@model ProjectSensive.EntityLayer.Concrete.Article
+
+@{
+    ViewData["Title"] = "AddArticle";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container">
+    <h2 class="my-4">Add Article</h2>
+
+    <form method="post" class="border p-4 shadow-sm bg-white rounded">
+        <div class="form-group">
+            <label>Title</label>
+            <input asp-for="Title" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label>Content</label>
+            <textarea asp-for="Description" class="form-control" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select asp-for="CategoryID" class="form-control" asp-items="ViewBag.Categories"></select>
+        </div>
+
+        <div class="form-group">
+            <label>Cover Image URL (optional)</label>
+            <input asp-for="CoverImageUrl" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Add</button>
+        <a href="/Article/MyArticles" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
